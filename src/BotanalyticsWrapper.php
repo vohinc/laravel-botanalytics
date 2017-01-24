@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: casperlai
- * Date: 2017/1/24
- * Time: 下午7:52
- */
-
 namespace Casperlaitw\LaravelBotanalytics;
 
 use Casperlaitw\BotanalyticsPhp\Client;

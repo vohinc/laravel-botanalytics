@@ -1,14 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: casperlai
- * Date: 2017/1/24
- * Time: 下午6:29
- */
-
 namespace Casperlaitw\LaravelBotanalytics;
 
-use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -41,7 +33,7 @@ class BotanalyticsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('botanalytics.wrapper', function (Container $app) {
+        $this->app->bind('botanalytics.wrapper', function () {
             return new BotanalyticsWrapper;
         });
     }
