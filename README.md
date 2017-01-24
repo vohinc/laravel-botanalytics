@@ -1,4 +1,5 @@
 # Laravel Botanalytics
+[![Build Status](https://travis-ci.org/CasperLaiTW/laravel-botanalytics.svg)](https://travis-ci.org/CasperLaiTW/laravel-botanalytics)
 [![StyleCI](https://styleci.io/repos/79917842/shield)](https://styleci.io/repos/79917842)
 
 A Botanalytics Wrapper for Laravel
