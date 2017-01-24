@@ -1,4 +1,5 @@
 <?php
+namespace Casperlaitw\LaravelBotanalytics\Tests;
 
 use Casperlaitw\BotanalyticsPhp\Exceptions\MissDriverException;
 use Casperlaitw\LaravelBotanalytics\BotanalyticsWrapper;

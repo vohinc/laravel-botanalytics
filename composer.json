@@ -32,6 +32,8 @@
         "files": [
             "tests/helpers.php"
         ],
-        "classmap": ["tests/"]
+        "psr-4": {
+            "Casperlaitw\\LaravelBotanalytics\\Tests\\": "tests/"
+        }
     }
 }
