@@ -1,0 +1,27 @@
+{
+    "name": "casperlaitw/laravel-botanalytics",
+    "description": "A Botanalytics Wrapper for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel-botanalytics",
+        "botanalytics",
+        "bot",
+        "analytics"
+    ],
+    "authors": [
+        {
+            "name": "Casper Lai",
+            "email": "casper.lai@sleepingdesign.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "casperlaitw/botanalytics-php": "^0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Casperlaitw\\LaravelBotanalytics\\": "src"
+        }
+    }
+}
