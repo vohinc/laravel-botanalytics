@@ -1,12 +1,12 @@
 <?php
-namespace Casperlaitw\LaravelBotanalytics;
+namespace Vohinc\LaravelBotanalytics;
 
-use Casperlaitw\BotanalyticsPhp\Client;
-use Casperlaitw\BotanalyticsPhp\Exceptions\MissDriverException;
+use Vohinc\BotanalyticsPhp\Client;
+use Vohinc\BotanalyticsPhp\Exceptions\MissDriverException;
 
 /**
  * Class BotanalyticsWrapper
- * @package Casperlaitw\LaravelBotanalytics
+ * @package Vohinc\LaravelBotanalytics
  */
 class BotanalyticsWrapper
 {
@@ -22,12 +22,12 @@ class BotanalyticsWrapper
      * @param $name
      * @param $arguments
      * @return Client
-     * @throws \Casperlaitw\BotanalyticsPhp\Exceptions\MissDriverException
+     * @throws \Vohinc\BotanalyticsPhp\Exceptions\MissDriverException
      */
     public function __call($name, $arguments)
     {
         $name = studly_case($name);
-        $driver = "\\Casperlaitw\\BotanalyticsPhp\\Drivers\\{$name}";
+        $driver = "\\Vohinc\\BotanalyticsPhp\\Drivers\\{$name}";
         if (class_exists($driver)) {
             $this->client->setDriver(new $driver);
             return $this->client;

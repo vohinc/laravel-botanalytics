@@ -1,11 +1,11 @@
 <?php
-namespace Casperlaitw\LaravelBotanalytics;
+namespace Vohinc\LaravelBotanalytics;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class BotanalyticsServiceProvider
- * @package Casperlaitw\LaravelBotanalytics
+ * @package Vohinc\LaravelBotanalytics
  */
 class BotanalyticsServiceProvider extends ServiceProvider
 {

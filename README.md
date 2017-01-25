@@ -1,5 +1,5 @@
 # Laravel Botanalytics
-[![Build Status](https://travis-ci.org/CasperLaiTW/laravel-botanalytics.svg)](https://travis-ci.org/CasperLaiTW/laravel-botanalytics)
+[![Build Status](https://travis-ci.org/vohinc/laravel-botanalytics.svg)](https://travis-ci.org/vohinc/laravel-botanalytics)
 [![StyleCI](https://styleci.io/repos/79917842/shield)](https://styleci.io/repos/79917842)
 
 A Botanalytics Wrapper for Laravel
@@ -10,7 +10,7 @@ A Botanalytics Wrapper for Laravel
 ### Composer
 To get the latest version
 ```shell
-composer require casperlaitw/laravel-botanalytics
+composer require vohinc/laravel-botanalytics
 ```
 
 ### Add Provider
@@ -18,14 +18,14 @@ Include the provider within `config/app.php`
 ```php
 'providers' => [
     ...
-    Casperlaitw\LaravelBotanalytics\BotanalyticsServiceProvider::class,
+    Vohinc\LaravelBotanalytics\BotanalyticsServiceProvider::class,
     ...
 ]
 ```
 
 ### Publish Configuration
 ```shell
-php artisan vendor:publish --provider=Casperlaitw\LaravelBotanalytics\BotanalyticsServiceProvider --tag=config
+php artisan vendor:publish --provider=Vohinc\LaravelBotanalytics\BotanalyticsServiceProvider --tag=config
 ```
 ## Config
 ### Set Botanalytics Token
@@ -42,7 +42,7 @@ BOTANALYTICS_TOKEN=botanalytics-token
 <?php
 namespace App;
 
-use Casperlaitw\LaravelBotanalytics\BotanalyticsFacade;
+use Vohinc\LaravelBotanalytics\BotanalyticsFacade;
 use Closure;
 
 class BotAnalyticsMiddleware
@@ -75,7 +75,7 @@ class BotAnalyticsMiddleware
 <?php
 namespace App;
 
-use Casperlaitw\LaravelBotanalytics\BotanalyticsFacade;
+use Vohinc\LaravelBotanalytics\BotanalyticsFacade;
 use Illuminate\Http\Request;
 
 class WebhookController extends Controller
@@ -104,4 +104,4 @@ class WebhookController extends Controller
 ```
 
 ## License
-This package is licensed under the [MIT license](https://github.com/CasperLaiTW/laravel-botanalytics/blob/master/LICENSE).
+This package is licensed under the [MIT license](https://github.com/vohinc/laravel-botanalytics/blob/master/LICENSE).

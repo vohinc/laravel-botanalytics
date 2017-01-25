@@ -1,8 +1,8 @@
 <?php
-namespace Casperlaitw\LaravelBotanalytics\Tests;
+namespace Vohinc\LaravelBotanalytics\Tests;
 
-use Casperlaitw\BotanalyticsPhp\Exceptions\MissDriverException;
-use Casperlaitw\LaravelBotanalytics\BotanalyticsWrapper;
+use Vohinc\BotanalyticsPhp\Exceptions\MissDriverException;
+use Vohinc\LaravelBotanalytics\BotanalyticsWrapper;
 use PHPUnit\Framework\TestCase;
 
 class BotanalyticsWrapperTest extends TestCase

@@ -1,11 +1,11 @@
 <?php
-namespace Casperlaitw\LaravelBotanalytics;
+namespace Vohinc\LaravelBotanalytics;
 
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class BotanalyticsFacade
- * @package Casperlaitw\LaravelBotanalytics
+ * @package Vohinc\LaravelBotanalytics
  */
 class BotanalyticsFacade extends Facade
 {
